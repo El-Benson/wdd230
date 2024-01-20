@@ -1,1 +1,126 @@
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt {
+}
+
+
+img {
+  display: grid;
+  max-width: 50%;
+  height: auto;
+}
+
+
+
+
+body, h1 {
+  text-align: right;
+  color: #fff;
+}
+body, h, p, ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+body, h3 { 
+  line-height: 3em;
+  text-align: center;
+  color: #fff; 
+  margin:0;
+  padding: 10px;
+  background-color: #005F73;
+  
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  background-color: #0A9396;
+  color: #333;
+}
+
+header {
+  display: grid;
+  justify-items: space-around;
+  text-align: left;
+  padding: 20px;
+  background-color: #005F73;
+}
+
+nav {
+  background-color: #001219;
+  color: #AE2012;
+  
+}
+
+ul, ol {
+  color: #001219;
+}
+
+nav ol {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  flex-direction:row;
+  
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+main {
+  line-height: 3em;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+.card {
+  background-color: #94D2BD;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card, p {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #001219;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* larger.css */
+
+@media (min-width: 768px) {
+  /* Adjust styles for larger views here */
+
+  body {
+    font-size: 18px; /* Example adjustment, modify as needed */
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr); /* Example adjustment, modify as needed */
+  }
+
+  /* Add more styles as needed for larger views */
+}
 
