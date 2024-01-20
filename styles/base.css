@@ -3,7 +3,7 @@ body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt {
 
 
 img {
-  max-width: 100%;
+  width: 80px;
   height: auto;
 }
 
