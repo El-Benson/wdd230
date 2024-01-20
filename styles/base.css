@@ -1,1 +1,121 @@
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt {
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+body, h1 {
+  text-align:center ;
+  color: #fff;
+}
+body, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+body, h3 { 
+  text-align: center;
+  color: #fff; 
+  margin:0;
+  padding: 10px;
+  background-color: #005F73;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  background-color: #0A9396;
+  color: #333;
+}
+
+header {
+  text-align: left;
+  padding: 20px;
+  background-color: #005F73;
+}
+
+nav {
+  background-color: #001219;
+  color: #AE2012;
+}
+
+ul, ol {
+  color: #001219;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  flex-direction:column;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background-color: #94D2BD;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card, p {
+  text-align: center;
+  
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #001219;
+  color: #fff;
+}
+
+
+
+
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+}
+
+/* Medium Screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  main {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 1025px) {
+  main {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+  }
+}
 
