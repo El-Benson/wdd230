@@ -3,8 +3,6 @@ body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt {
 
 
 img {
-  display: grid;
- align-items: right;
   max-width: 70px;
   height: auto;
 }
@@ -114,8 +112,6 @@ footer {
   }
 
   header {
-    display: grid;
-    justify-items: space-around;
     text-align: left;
     padding: 20px;
     background-color: #005F73;
