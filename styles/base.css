@@ -4,7 +4,7 @@ body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt {
 
 img {
   display: grid;
-  grid-template-column: 1fr;
+  grid-template-columns: 1fr;
   width: 80px;
   height: auto;
 }
