@@ -108,19 +108,16 @@ footer {
 
 
 
-/* larger.css */
-
 @media (min-width: 768px) {
-  /* Adjust styles for larger views here */
+  
 
   body {
-    font-size: 18px; /* Example adjustment, modify as needed */
+    font-size: 18px; 
   }
 
   main {
-    grid-template-columns: repeat(2, 1fr); /* Example adjustment, modify as needed */
+    grid-template-columns: repeat(2, 1fr);  
   }
 
-  /* Add more styles as needed for larger views */
 }
 
