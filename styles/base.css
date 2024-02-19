@@ -41,7 +41,7 @@ body {
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  text-align: left;
+  text-align: center;
   padding: 20px;
   background-color: #005F73;
 }
