@@ -3,16 +3,19 @@ body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt {
 
 
 img {
-  max-width: 70px;
+  display: grid;
+  max-width: 50%;
   height: auto;
 }
 
 
+
+
 body, h1 {
-  text-align:center ;
+  text-align: right;
   color: #fff;
 }
-body, h2, p, ul {
+body, h, p, ul {
   margin: 0;
   padding: 0;
   text-align: left;
@@ -20,11 +23,13 @@ body, h2, p, ul {
 }
 
 body, h3 { 
+  line-height: 3em;
   text-align: center;
   color: #fff; 
   margin:0;
   padding: 10px;
   background-color: #005F73;
+  
 }
 
 body {
@@ -35,7 +40,9 @@ body {
 }
 
 header {
-  text-align: center;
+  display: grid;
+  justify-items: space-around;
+  text-align: left;
   padding: 20px;
   background-color: #005F73;
 }
@@ -43,32 +50,38 @@ header {
 nav {
   background-color: #001219;
   color: #AE2012;
+  
 }
 
 ul, ol {
   color: #001219;
 }
 
-nav ul {
+nav ol {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  flex-direction:column;
+  flex-direction:row;
+  
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
+  
 }
 
 main {
+  line-height: 3em;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   display: grid;
+  grid-template-columns: 3fr 1fr;
   gap: 20px;
 }
+
 
 .card {
   background-color: #94D2BD;
@@ -78,7 +91,6 @@ main {
 }
 .card, p {
   text-align: center;
-  
 }
 
 footer {
@@ -92,39 +104,22 @@ footer {
 
 
 
-@media screen and (min-width: 768px) {
-  body, h1 {
-    text-align: center;
-    color: #fff;
-  }
 
-  body, h, p, ul {
-    line-height: 1.6;
-  }
 
-  body, h3 {
-    line-height: 3em;
-    text-align: center;
-    color: #fff;
-    margin: 0;
-    padding: 10px;
-    background-color: #005F73;
-  }
 
-  header {
-    text-align: left;
-    padding: 20px;
-    background-color: #005F73;
-  }
 
-  nav ol {
-    flex-direction: row;
+/* larger.css */
+
+@media (min-width: 768px) {
+  /* Adjust styles for larger views here */
+
+  body {
+    font-size: 18px; /* Example adjustment, modify as needed */
   }
 
   main {
-    line-height: 3em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Example adjustment, modify as needed */
   }
+
+  /* Add more styles as needed for larger views */
 }
